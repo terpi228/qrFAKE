@@ -78,7 +78,7 @@ body {
     margin-right: 52px;
 }
 
-.header-list-item:not(:last-child){
+.header-list-item {
     margin-right: 52px;
 }
 
