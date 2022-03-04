@@ -6,7 +6,7 @@ html {
 *,
 *::before,
 *::after {
-    box-sizing:inherit;
+    box-sizing: inherit;
 }
 
 a {
@@ -19,7 +19,7 @@ img{
 }
 
 body {
-    min-width: 1200px;
+    max-width: 1200px;
     font-family: 'font', sans-serif;
 }
 
@@ -41,7 +41,7 @@ body {
 }
 
 .contanier{
-    width:1200px;
+    width: 1200px;
     padding: 0 15px;
     margin: 0 auto;
 }
@@ -64,5 +64,21 @@ body {
 /*HEADER*/
 .header{
     padding: 36px 0;
+}
+
+.header-container {
+    align-items: center;
+}
+
+.header-logo {
+    margin: auto;
+}
+
+.header-nav {
+    margin-right: 52px;
+}
+
+.header-list-item:not(:last-child){
+    margin-right: 52px;
 }
 
