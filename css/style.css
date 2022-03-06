@@ -38,6 +38,7 @@ body {
 
 .flex {
     display: flex;
+    justify-content: space-evenly;
 }
 
 .contanier{
@@ -82,3 +83,98 @@ body {
     margin-right: 52px;
 }
 
+/*-----------HERO---------*/
+.hero-contant{
+    max-width: 50%;
+    flex-direction: column;
+    align-items:flex-start;
+}
+
+.hero-title{
+    margin: 0;
+    margin-bottom: 25px;
+}
+
+.hero-descr{
+    margin: 0;
+    margin-bottom: 34px;
+}
+
+.hero-btn {
+    margin-bottom: 15px;
+    width: 250px;
+    height: 58px;
+    padding: 15px, 35px, 15px, 35px;
+    background-color: #3172B9;
+    border-radius: 3px;
+    flex-direction: row;
+}
+
+.text-btn {
+    color: #FFFFFF;
+    flex: none;
+    flex-grow: 0;
+    margin: 0px 10px;
+    order: 0;
+}
+
+/*----------servises-----------*/
+
+.section-title {
+    text-align: center;
+    font-family: Open Sans;
+    font-style:normal ;
+    font-weight: 300;
+    font-size: 36px;
+    line-height: 130%;
+    margin-bottom: 20px;
+}
+
+.section-descr{
+    text-align: center;
+    font-family: Open Sans;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    font-style: normal;
+}
+
+
+.services-item {
+    flex-direction: column;
+    width: 270px;
+    height: 320px;
+    border-radius: 5px;
+    border: 1px solid #E4E4E4;
+    box-sizing: border-box;
+    margin: 30px;
+    justify-content: space-evenly;
+}
+
+.services-item-icon {
+    width: 68px;
+    height: 66px;
+    margin-top: 61px ;
+    margin-left: 101px;
+    margin-right: 101px;
+}
+
+.services-item-title{
+    font-family: Open Sans;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 130%;
+    font-style: normal;
+    text-align: center;
+}
+
+.services-item-desc{
+    font-family: Open Sans;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 150%;
+    /* or 21px */
+    
+    text-align: center;
+    font-style: normal;
+}
