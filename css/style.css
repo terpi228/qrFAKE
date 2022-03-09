@@ -8,6 +8,13 @@ html {
     box-sizing: inherit;
 }
 
+::selection {
+background: #08e2ff; /* Safari */
+}
+::-moz-selection {
+background: #0afdf1; /* Firefox */
+}
+
 a {
     color: inherit;
     text-decoration: none;
@@ -19,8 +26,8 @@ img {
 
 body {
     min-width: 1200px;
-    font-family: 'Oswald', 'Open Sans' sans-serif;
-    background-color: azure;
+    font-family: 'Montserrat';
+    background-color: rgb(240, 255, 255);
 }
 
 .list-reset {
@@ -32,8 +39,7 @@ body {
 .btn-reset {
    padding: 0;
    border: none;
-   background-color: transparent;   /*устанавливает прозрачный фон*/
-   cursor: pointer; /*чтоб было видно курсор, что можно кликать*/
+   background-color: transparent; 
 }
 
 .flex {
@@ -61,6 +67,8 @@ body {
     padding-bottom: 160px;
 }
 
+
+
 /*header*/
 .header {
     padding: 36px 0;
@@ -78,14 +86,36 @@ body {
     margin-right: 52px;   /*расстояние между навигацией и кнопкой*/
 }
 
-.header-list-item:not(:last-child) {
-    margin-right: 52px;
+.header-list-item {
+    margin-right: 30px;
+    padding: 10px;
+    border: 1px;
 }
 
+.header-list-item:hover {
+    color: #3172B9;
+    outline: groove;
+}
+
+.header-link{
+    
+}
+
+.header-btn{
+    background-image: linear-gradient(to right, #45aeeb 0%, #4830F0 51%, #1742a7 100%);
+    width: 150px;
+    height: 50px;
+    border-radius:3px;
+    transition: .5s;
+    color: white;
+}
+.header-btn:hover {
+  background-image:  linear-gradient(to right, #2a88be 0%, #2e1ba3 51%, #152f6d 100%);;
+}
 /*hero*/
 .hero {
     padding: 100px 0;
-    background-image: url(../img/hero.jpg);
+    background-image: linear-gradient(to right, rgb(240, 255, 255) 0%, rgba(240, 255, 255, 0) 100%),  url(../img/hero.jpg);
 }
 
 .hero-content {
@@ -97,20 +127,53 @@ body {
 .hero-title {
     margin: 0;
     margin-bottom: 25px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 40px;
+    font-style: normal;
 }
 
 .hero-descr {
     margin: 0;
     margin-bottom: 34px;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 300;
 }
 
 .hero-btn {
-    margin-bottom: 14px;
+  text-decoration: none;
+  display: inline-block;
+  color: white;
+  padding: 20px 30px;
+  margin: 10px 20px;
+  border-radius: 10px;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  background-image: linear-gradient(to right, #45aeeb 0%, #4830F0 51%, #0b1b3f 100%);
+  background-size: 200% auto;
+  box-shadow: 0 0 20px rgba(0, 0, 0, .1);
+  transition: .5s;
+}
+.hero-btn:hover {
+  background-position: right center;
+}
+
+.hero-secure{
+    color: #2e2e2ef5;
+    font-size: 11px;
+    margin-left: 20px;
+}
+
+.hero-secure-img{
+    width: 8px;
 }
 
 /*services*/
 .services-title {   /*заголовок*/
     text-align: center;
+    
 }
 
 .services-descr {   /*параграф-абзац*/
@@ -122,7 +185,13 @@ body {
     align-items: center;    /*отцентруем*/
     padding: 30px;
     width: 270px;
-    outline: 1px solid coral; /*для того, чтобы мы могли визуально видеть границы*/
+    border-radius: 3px; 
+    box-shadow: 10px 10px 10px  #001e6494;
+    transition: .5s;
+}
+
+.services-item:hover{
+    box-shadow: 0px 0px 5px #001e6494;
 }
 
 /*далее выставим отступ между нашими карточками в services, 
@@ -154,11 +223,23 @@ body {
 .articles-item {
     width: 570px;
     margin-bottom: 30px;
-    outline: 1px solid coral; /*для того, чтобы мы могли визуально видеть границы*/
+    border-radius: 3px;
+    outline: 1px solid #cfcfcf83;
+    /*outline: 1px solid coral; для того, чтобы мы могли визуально видеть границы*/
 }
 
 .articles-item:not(:nth-child(2n)) {
     margin-right: 30px;
+    
+}
+
+.blog-preview{
+    box-shadow: 10px 5px 5px #001e6494;
+    transition: .5s;
+}
+
+.blog-preview:hover{
+    box-shadow: 0px 0px 5px #001e6494;
 }
 
 .blog preview-image {
@@ -190,7 +271,9 @@ body {
     width: 370px;
     padding: 50px 36px;
     padding-bottom: 30px;
-    outline: 1px solid coral; /*для того, чтобы мы могли визуально видеть границы*/
+    border-radius: 3px;
+    outline: 1px solid #cfcfcf83;
+    /*outline: 1px solid coral; для того, чтобы мы могли визуально видеть границы*/
 }
 
 .clients-item:not(:nth-child(3n)) {
