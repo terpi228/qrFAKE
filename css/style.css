@@ -97,9 +97,7 @@ body {
     outline: groove;
 }
 
-.header-link{
-    
-}
+
 
 .header-btn{
     background-image: linear-gradient(to right, #45aeeb 0%, #4830F0 51%, #1742a7 100%);
@@ -112,6 +110,8 @@ body {
 .header-btn:hover {
   background-image:  linear-gradient(to right, #2a88be 0%, #2e1ba3 51%, #152f6d 100%);;
 }
+
+
 /*hero*/
 .hero {
     padding: 100px 0;
